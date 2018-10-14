@@ -1,0 +1,8 @@
+CREATE TABLE blogs
+(
+    id int(11) Primary Key AUTO_INCREMENT,
+    title VARCHAR(255),
+    content LONGTEXT NOT NULL,
+    date VARCHAR(255)
+    
+);

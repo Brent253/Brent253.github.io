@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--This will set the viewport of the page, which will give the browser instructions
+        on how to control the page's dimensions and scaling.-->
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Title-->
+        <title>Brent Taylor</title>
+        <link href="styles/styles.css" type="text/css" rel="stylesheet">
+        <link href="styles/modalStyles.css" type="text/css" rel="stylesheet">
+
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!--Bootstrap Javascript-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+        <!--JQuery cdn-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+        <!--Font Awesome--->
+         <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+
+        <script src="js/home.js"></script>
+    </head>
+
+    <!--Body opening-->
+<body>
+
+<!--Hero Image-->
+<div class="hero-image">
+  <ul>
+  <li class="active"><a href="./">Home</a></li>
+  <li><a href="#two">About</a></li>
+  <li><a href="./projects">Projects</a></li>
+
+</ul>
+  <div class="hero-text">
+    <h1 style="font-size:50px">Brent Taylor</h1>
+    <p>UI Developer</p>
+    <button id="myBtn">Hire me</button>
+    <div class="divider"></div>
+   <a href="#two"><button>About me</button></a> <!--A tags need to be fixed for css styling changes-->
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="container-fluid" id="aboutSection" name="about">
+      <h2 id="two"></h2>
+         <!--Breakline-->
+      <hr>
+         <!--Picture content-->
+        <img src="images/profilepic.jpg" id="profilePic"><br>
+      <strong>Brent J Taylor</strong><br>
+        Software Developer<br>
+        <i class="fa fa-map-marker" aria-hidden="true"></i> Tacoma, WA<br>
+
+      <p>I am a problem solver seeking opportunities as a Software Engineer.<br>
+        I focus primarily on responsive web development and back-end programming in Java.<br>
+        In my spare time I study web design, and look to help small businesses improve their online presence.<br>
+      <hr>
+
+
+</div>
+
+
+<!--Recent project-->
+<div class="container-fluid" id="recentProjects">
+    <h3>Recent Projects</h3>
+
+  <!--First column-->
+      <p>Jordan Bye Art Gallery</p>
+      <a href="http://www.jordanbye.com">
+      <img src="images/jordanbyegallery.png" class="center" style="width:50%" alt="Image"></a>
+      <a href="./projects"><button class="btn" id="projButton">Projects</button></a>
+
+ </div>
+</div>
+
+
+<!-- The skills Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>My Skills</h1>
+
+<p>HTML</p>
+<div class="container" id="skillsContainer">
+  <div class="skills html">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container" id="skillsContainer">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container" id="skillsContainer">
+  <div class="skills js">80%</div>
+</div>
+
+<p>PHP</p>
+<div class="container" id="skillsContainer">
+  <div class="skills php">60%</div>
+</div><br>
+
+
+
+<section>Contact Info</section>
+<hr>
+   <i class="fa fa-map-marker" aria-hidden="true"></i> Location: Tacoma, WA.<br>
+ <i class="fa fa-envelope" aria-hidden="true"></i> Email: brent4994@hotmail.com<br>
+ <i class="fa fa-globe" aria-hidden="true"></i> Website: btaylor.greenrivertech.net/portfolio<br>
+ <i class="fas fa-comment-alt"></i> Skype: btaylor17@mail.greenriver.edu
+
+   <div id="contactIcons">
+     <br>
+        Connect with me<br>
+        <a href="mailto:brent4994@hotmail.com">
+        <img src="images/email.png" id="email">
+        </a>
+
+
+         <!--Linkedin icon-->
+         <a href="https://www.linkedin.com/in/brenttaylor253/">
+        <img src="images/linkedin.png" id="linkedin">
+        </a>
+         <!--Github icon-->
+        <a href="https://github.com/Brent253">
+        <img src="images/github-logo.png" id="github">
+        </a>
+
+  </div> <!--End Picture Content-->
+ </div>
+
+</div> <!--End skills modal-->
+
+<!--Footer image-->
+<div class="footer">
+  <div class="container">
+  <b>Lets work together</b>
+  <p>We can build great things.</p><br>
+<button class="button button5" id="footerButton">Get In <br>Touch</button>
+  </div>
+</div> <!--End footer image-->
+
+
+
+
+
+
+</body>
+</html>

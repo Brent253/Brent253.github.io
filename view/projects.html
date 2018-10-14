@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+        <!--This will set the viewport of the page, which will give the browser instructions
+        on how to control the page's dimensions and scaling.--> 
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--Title-->
+        <title>Brent Taylor</title>
+        <link href="styles/projectStyles.css" type="text/css" rel="stylesheet">
+        <link href="styles/styles.css" type="text/css" rel="stylesheet">
+       
+        
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!--Bootstrap Javascript-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        
+        <!--JQuery cdn-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+        
+        <!--Font Awesome--->
+         <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+        
+        <script src="js/home.js"></script>
+    </head>
+    
+    <!--Body opening-->
+<body>
+<!--Hero Image-->
+
+</div>
+<div class="jumbotron">
+  <ul>
+  <li><a href="./">Home</a></li>
+  <li><a href="http://btaylor.greenrivertech.net/portfolio/#two">About</a></li>
+  <li class="active"><a href="./projects">Projects</a></li>
+</ul>
+  <div class="container text-center">
+    <h1>My Portfolio</h1>      
+    <p>Recent Projects</p>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <img src="images/jordanbyegallery.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/behindtheknife.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/footer artwork example.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal2" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/jordanbyegallery.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/behindtheknife.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/footer artwork example.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/jordanbyegallery.png" style="width:100%" onclick="currentSlide(1)" alt="Jordan Bye Original Artwork">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/behindtheknife.png"  style="width:100%" onclick="currentSlide(2)" alt="Behind the Knife: Surgery Podcast">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/footer artwork example.jpg"  style="width:100%" onclick="currentSlide(3)" alt="Webdesign Footer">
+    </div>
+  </div>
+</div>
+<script>
+function openModal() {
+  document.getElementById('myModal2').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal2').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
+
