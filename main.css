@@ -168,8 +168,8 @@ footer p {
 }
 
 #btk{
-    width: 50%;
-    height: 460px
+    width: 45%;
+    height: 459px
 }
 /**Responsive for Desktop, Tablet, and Mobile**/
 @meda only screen and (max-width: 768px){
