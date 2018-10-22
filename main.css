@@ -167,10 +167,6 @@ footer p {
     }
 }
 
-#btk{
-    width: 45%;
-    height: 459px
-}
 /**Responsive for Desktop, Tablet, and Mobile**/
 @media only screen and (max-width: 768px){
     header {
