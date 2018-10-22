@@ -172,7 +172,7 @@ footer p {
     height: 459px
 }
 /**Responsive for Desktop, Tablet, and Mobile**/
-@meda only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     header {
         width: 96%;
         margin: 30px auto 100px auto;
