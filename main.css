@@ -111,6 +111,10 @@ header a {
     margin: 1%;
     width: 45%;
 }
+
+.work-logo{
+    color: #FF4A5E;
+}
 /*-----------------Dropdown in nav-----*/
 /* Style The Dropdown Button */
 .dropbtn {
@@ -172,7 +176,8 @@ header a {
 }
 
 .whatIDo h1 {
-    color: #13A3FD;
+/*    color: #13A3FD;*/
+    color: #FF4A5E;
 }
 
 .iAm {
